@@ -1,0 +1,122 @@
+/* Variables */
+
+:root {
+    --background: #BF6161;
+    --black-8: #111111;
+    --gray-7: ;
+    --gray-6: ;
+    --gray-5: ;
+    --gray-4: ;
+    --gray-3: ;
+    --gray-2: ;
+    --white-1: ;
+}
+
+/* Resets */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+
+
+/* Main */
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 80vh;
+    width: 80vh;
+    position: relative;
+    /* background-color: royalblue; */
+
+}
+
+/* Sections */
+section {
+    width: 100%;
+    height: min-content;
+    display: block;
+    /* position: absolute; */
+
+}
+
+.top {
+    top: 0;
+}
+
+.middle {
+    top: 50px;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.col {
+    /* display: inline-block; */
+    position: relative;
+}
+
+
+.left {
+    left: 0;
+}
+
+.center {
+    left: 100px;
+}
+
+.right {
+    right: 0;
+
+}
+
+
+.full-sized {
+    width: 0;
+    height: 0;
+    border: 45px solid transparent;
+    position: relative;
+    top: -45px;
+}
+
+.full-sized::after {
+    content: '';
+    position: absolute;
+    left: -45px;
+    top: 70px;
+    width: 0;
+    height: 0;
+    border: 45px solid transparent;
+}
+
+.black-8 {
+    border-bottom: 70px solid var(--black-8);
+}
+
+.black-8::after {
+    border-top: 70px solid var(--black-8);
+}
